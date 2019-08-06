@@ -17,15 +17,4 @@ document.addEventListener("DOMContentLoaded", function () {
              });
          });
      });
-
-    $('#container').addFlexImages(media_list, true).flexGallery({
-        margin: '0.5vmin',
-        minHeightRatioWindow: null,
-        minHeightRatioScreen: null,
-        fadeInDuration: 1000,
-        checkPeriod: 100,
-        autoAdjust: true
-    });
-
-
 });
