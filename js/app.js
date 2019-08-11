@@ -2,11 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menu = document.querySelector(".menu");
     const btn = document.querySelector(".menu-toggle");
+    const element = document.querySelector(".nav_list_items");
 
     btn.addEventListener("click", function (e) {
         e.preventDefault();
         menu.classList.toggle("show");
     });
+
 
      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
          anchor.addEventListener('click', function (a) {
@@ -17,4 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
              });
          });
      });
+    $(function () {
+  $('dd').hide();
+        $('dt').on('click',function () {
+            $(this).next().slideToggle();
+        })
+    });
+
 });
