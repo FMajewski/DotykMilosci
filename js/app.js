@@ -20,10 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
          });
      });
     $(function () {
-  $('dd').hide();
-        $('dt').on('click',function () {
-            $(this).next().slideToggle();
-        })
+        $('dd').hide();
+            $('dt').on('click',function () {
+                $(this).next().slideToggle();
+            })
     });
+    $('.parallax-window').parallax({imageSrc: "/images/wellness-1382476_1920.jpg"});
+    jQuery(window).trigger('resize').trigger('scroll');
+
+
 
 });
