@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>DOTYK MIŁOŚCI</title>
@@ -11,12 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    <script src="/parallax.js-1.5.0/parallax.js"></script>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-jquery@3.1.1/dist/simpleParallax.min.js"></script>
 </head>
 <body>
 <header class="header" data-aos="fade-in" data-aos-delay="800" data-aos-offset="200"
@@ -28,7 +25,7 @@
             <li class="nav_list_items"><a href="#section-aboutme" class="nav_item">O MNIE</a></li>
             <li class="nav_list_items"><a href="#section-four" class="nav_item">MASAŻE</a></li>
             <li class="nav_list_items"><a href="#" class="nav_item">GALERIA</a></li>
-            <li class="nav_list_items"><a href="#" class="nav_item">KONTAKT</a></li>
+            <li class="nav_list_items"><a href="#" class="nav_item" id="myBtn3">KONTAKT</a></li>
         </ul>
 
     </nav>
@@ -40,25 +37,50 @@
 
 </header>
 <main>
-    <section id="section-one" class="parallax-window">
+    <section id="section-one">
         <div class="main_info">
-                <div class="main_title" data-aos="fade-in" data-aos-delay="800" data-aos-offset="200"
-                     data-aos-duration="1300">
-                    <span>MASAŻ LOMI LOMI NUI</span>
-                    <span class="main_underline"></span>
-                </div>
-                <div class="main_text" data-aos="fade-in" data-aos-delay="800" data-aos-offset="200"
-                     data-aos-duration="1600">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur ea excepturi facilis
-                        ipsam magnam numquam omnis reiciendis totam unde. Culpa iste nisi praesentium quae quaerat
-                        repellendus sit velit voluptatem.</p>
-                </div>
+            <div class="main_title" data-aos="fade-in" data-aos-delay="800" data-aos-offset="200"
+                 data-aos-duration="1300">
+                <span>MASAŻ LOMI LOMI NUI</span>
+                <span class="main_underline"></span>
+            </div>
+            <div class="main_text" data-aos="fade-in" data-aos-delay="800" data-aos-offset="200"
+                 data-aos-duration="1600">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur ea excepturi facilis
+                    ipsam magnam numquam omnis reiciendis totam unde. Culpa iste nisi praesentium quae quaerat
+                    repellendus sit velit voluptatem.</p>
+            </div>
 
             <div data-aos="fade-in" data-aos-delay="1600" data-aos-offset="200" data-aos-duration="2000">
-                <a class="mainBtn">Umów wizytę</a>
+                <button class="mainBtn" id="myBtn2">Umów wizytę</button>
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="close">&times;</div>
+                        <div class="insideModal">
+                            <div class="modalInfo">
+                                <div>
+                                    <h1>780 055 041</h1>
+                                </div>
+                                <div>
+                                    <h1> ul. Bobrowiecka 3/89, 00-728 Warszawa</h1>
+                                </div>
+                                <div>
+                                    <h1>info@soma-gabinet.pl</h1>
+                                </div>
+                            </div>
+                            <div class="mapouter"><div class="gmap_canvas"><iframe width="80%" height="660px" id="gmap_canvas" src="https://maps.google.com/maps?q=%20bobrowiecka%201&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:660px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:660px;width:100%;}</style></div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+        <img class="thumbnail" src="images/wellness-1382476_1920.jpg" alt="image">
+
     </section>
+
     <section id="section-two">
         <div class="aboutlomi_photo" data-aos="fade-in" data-aos-delay="200" data-aos-offset="200"
              data-aos-duration="800"></div>
@@ -76,79 +98,24 @@
         </div>
     </section>
     <section id="section-aboutme" class="aboutme_section">
-    <div class="about" data-aos="fade-up" data-aos-delay="200" data-aos-offset="200" data-aos-duration="1000">
-        <span>O MNIE</span>
-        <span class="underline"></span>
-        <p>
-            Coach i masażystka Lomi Lomi Nui.  Pasjonatka zdrowego  stylu  życia  i  rozwoju  osobistego. Naturoterapeutka  i  propagatorka  oczyszczania  organizmu   oraz  przywracania   równowagi       w ciele, umyśle i duszy.   Tantryczka  i  szamanka. Wielbicielka  kobiecych  kręgów  i  koni.
+        <div class="about" data-aos="fade-up" data-aos-delay="200" data-aos-offset="200" data-aos-duration="1000">
+            <span>O MNIE</span>
+            <span class="underline"></span>
+            <p>
+                Coach i masażystka Lomi Lomi Nui. Pasjonatka zdrowego stylu życia i rozwoju osobistego. Naturoterapeutka
+                i propagatorka oczyszczania organizmu oraz przywracania równowagi w ciele, umyśle i duszy. Tantryczka i
+                szamanka. Wielbicielka kobiecych kręgów i koni.
 
-        </p>
-    </div>
+            </p>
+        </div>
         <div class="aboutme_photo" data-aos="fade-in" data-aos-delay="500" data-aos-offset="200"
              data-aos-duration="1500"></div>
     </section>
 
-    <section id="section-three" class="parallax-window-two" data-parallax="scroll"
-             data-image-src="/images/beauty-body-hands-56884.jpg" >
+    <section id="section-three">
+        <img class="thumbnail" src="images/beauty-body-hands-56884.jpg" alt="image">
     </section>
     <section id="section-four">
-<!--        <div class="mycontainer">-->
-<!--            <div class="offer_title">-->
-<!--                <span class="offer_title">OFERTA</span>-->
-<!--            </div>-->
-<!--            <div class="offers">-->
-<!--                <div class="massages">-->
-<!--                    <dt>-->
-<!--                        <div class="massage">-->
-<!--                            <span class="price1"><h1>Rytuał Lomi Lomi Nui - 90 min / 120min</h1></span>-->
-<!--                            <span><h2>250 zł / 300 zł</h2></span>-->
-<!--                        </div>-->
-<!--                    </dt>-->
-<!--                    <dd>Podczas rytuału masowane jest całe ciało. Dotyk jest delikatny i mocny jednocześnie, uważny,-->
-<!--                        otulający, ruchy wolne, długie. Masaż zapewnia głęboki relaks i odprężenie, rozluźnia ścięgna i-->
-<!--                        mięśnie, a także zwiększa ruchliwość i elastyczność stawów. Wycisza i koi nerwy, poprawia-->
-<!--                        krążenie limfy i krwi a także zapewnia ulgę w stanach długotrwałego stresu. Rozładowuje napięcie-->
-<!--                        mięśniowe, co sprzyja wypoczynkowi i wspaniale poprawia samopoczucie.-->
-<!--                    </dd>-->
-<!--                    <div class="massage">-->
-<!--                    <span class="price1">-->
-<!--                        <h1>Rytuał Lomi Lomi Nui na cztery ręce - 90 min</h1>-->
-<!--                    </span>-->
-<!--                        <span><h2>400 zł</h2></span>-->
-<!--                    </div>-->
-<!--                    <div class="massage">-->
-<!--                <span class="price1">-->
-<!--                    <h1>Głęboki Relaks</h1>-->
-<!--                </span>-->
-<!--                        <span><h2>200 zł zł</h2></span>-->
-<!--                    </div>-->
-<!--                    <div class="massage">-->
-<!--                <span class="price1">-->
-<!--                    <h1>Peeling całego ciała i masaż</h1>-->
-<!--                </span>-->
-<!--                        <span><h2>250 zł</h2></span>-->
-<!--                    </div>-->
-<!--                    <div class="massage">-->
-<!--                <span class="price1">-->
-<!--                    <h1>Rytuał dla ciała i zmysłów - 120 zł</h1>-->
-<!--                </span>-->
-<!--                        <span><h2>400 zł</h2></span>-->
-<!--                    </div>-->
-<!--                    <div class="massage">-->
-<!--                <span class="price1">-->
-<!--                    <h1>Masaż głowy, szyi i karku - 45 min</h1>-->
-<!--                </span>-->
-<!--                        <span><h2>150 zł</h2></span>-->
-<!--                    </div>-->
-<!--                    <div class="massage">-->
-<!--                <span class="price1">-->
-<!--                    <h1>Relaksacyjny masaż stóp - 30 min</h1>-->
-<!--                </span>-->
-<!--                        <span><h2>100 zł</h2></span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
         <section>
             <div class="offer_title">OFERTA</div>
         </section>
@@ -157,14 +124,19 @@
             <dl>
                 <dt>
                     <div>Rytuał Lomi Lomi Nui<br><span class="time">90 minut / 120 minut</span></div>
-                    <div>250 zł <span class="price">/ 300 zł</span> </div>
+                    <div>250 zł <span class="price">/ 300 zł</span></div>
                 </dt>
                 <dd>
-                    Podczas rytuału masowane jest całe ciało. Dotyk jest delikatny i mocny jednocześnie, uważny, otulający, ruchy wolne, długie. Masaż zapewnia głęboki relaks i odprężenie, rozluźnia ścięgna i mięśnie, a także zwiększa ruchliwość i elastyczność stawów. Wycisza i koi nerwy, poprawia krążenie limfy i krwi a także zapewnia ulgę w stanach długotrwałego stresu. Rozładowuje napięcie mięśniowe, co sprzyja wypoczynkowi i wspaniale poprawia samopoczucie.
+                    Podczas rytuału masowane jest całe ciało. Dotyk jest delikatny i mocny jednocześnie, uważny,
+                    otulający, ruchy wolne, długie. Masaż zapewnia głęboki relaks i odprężenie, rozluźnia ścięgna i
+                    mięśnie, a także zwiększa ruchliwość i elastyczność stawów. Wycisza i koi nerwy, poprawia krążenie
+                    limfy i krwi a także zapewnia ulgę w stanach długotrwałego stresu. Rozładowuje napięcie mięśniowe,
+                    co sprzyja wypoczynkowi i wspaniale poprawia samopoczucie.
                 </dd>
 
                 <dt>
-                    <div>Rytuał Lomi Lomi Nui na cztery ręce - 90 minut</div>
+                    <div>Rytuał Lomi Lomi Nui na cztery ręce<br><span class="time">90 minut</span></div>
+                    </div>
                     <div>400 zł</div>
                 </dt>
                 <dd>
@@ -175,31 +147,42 @@
                     <div>200 zł <span class="price">/ 250 zł</span></div>
                 </dt>
                 <dd>
-                    Autorski, głęboko relaksacyjny masaż całego ciała wykonywany długimi, wolnymi ruchami, które usuwają stres i uspakajają ciało, pomagają pozbyć się przemęczenia i napięć w ciele. Głęboki relaks podczas masażu wzmacnia chęć do życia, podnosi energię i witalność. Masaż oparty jest o uważny dotyk, techniki masażu polinezyjskiego, masażu tantrycznego i techniki oddechowe.
+                    Autorski, głęboko relaksacyjny masaż całego ciała wykonywany długimi, wolnymi ruchami, które usuwają
+                    stres i uspakajają ciało, pomagają pozbyć się przemęczenia i napięć w ciele. Głęboki relaks podczas
+                    masażu wzmacnia chęć do życia, podnosi energię i witalność. Masaż oparty jest o uważny dotyk,
+                    techniki masażu polinezyjskiego, masażu tantrycznego i techniki oddechowe.
                 </dd>
                 <dt>
-                    <div>Peeling całego ciała i masaż - 90 minut</div>
+                    <div>Peeling całego ciała i masaż<br><span class="time">90 minut</span></div>
+                    </div>
                     <div>250 zł</div>
                 </dt>
                 <dd>
-                    Złuszczający, naturalny i ręcznie wykonywany peeling cukrowy lub solny całego ciała, z wyborem zapachu aromatycznego olejku. Po peelingu wykonywany jest antystresowy i rozluźniający masaż, który wzmaga doznania sensualne w ciele.
+                    Złuszczający, naturalny i ręcznie wykonywany peeling cukrowy lub solny całego ciała, z wyborem
+                    zapachu aromatycznego olejku. Po peelingu wykonywany jest antystresowy i rozluźniający masaż, który
+                    wzmaga doznania sensualne w ciele.
                 </dd>
                 <dt>
-                    <div>Rytuał dla ciała i zmysłów - 120 minut</div>
+                    <div>Rytuał dla ciała i zmysłów<br><span class="time">120 minut</span></div>
+                    </div>
                     <div>300zł</div>
                 </dt>
                 <dd>
-                    Peeling całego ciała połączony z autorskim masażem głęboko relaksacyjnym. Rytuał ten to uczta dla ciała i zmysłów. Kompletny relaks i wyciszenie przy pięknej muzyce i olejkowych zapachach.
+                    Peeling całego ciała połączony z autorskim masażem głęboko relaksacyjnym. Rytuał ten to uczta dla
+                    ciała i zmysłów. Kompletny relaks i wyciszenie przy pięknej muzyce i olejkowych zapachach.
                 </dd>
                 <dt>
-                    <div>Masaż głowy, szyi i karku - 45 minut</div>
+                    <div>Masaż głowy, szyi i karku<br><span class="time">45 minut</span></div>
+                    </div>
                     <div>150 zł</div>
                 </dt>
                 <dd>
-                    Masaż miejsc, w których kumuluje się najwięcej stresu i napięć. Efektem masażu jest natychmiastowa ulga i rozluźnienie.
+                    Masaż miejsc, w których kumuluje się najwięcej stresu i napięć. Efektem masażu jest natychmiastowa
+                    ulga i rozluźnienie.
                 </dd>
                 <dt>
-                    <div>Relaksacyjny masaż stóp - 30 minut</div>
+                    <div>Relaksacyjny masaż stóp<br><span class="time">30 minut</span></div>
+                    </div>
                     <div>100 zł</div>
                 </dt>
                 <dd>
@@ -209,8 +192,7 @@
         </section>
     </section>
 
-    <section id="section-five" data-aos="fade-in" data-aos-delay="300" data-aos-offset="200"
-             data-aos-duration="1300">
+    <section id="section-five">
         <div>
             <div class="col-md-8 col-center m-auto">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -223,7 +205,7 @@
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="item carousel-item active">
-                            <div class="img-box"><img src="/images/message.png" alt=""></div>
+                            <div class="img-box">Opinie</div>
                             <p class="testimonial">
                                 Polecam z całego serca masaż Lomi w wykonaniu Uli :) delikatność, czułość, ukojenie,
                                 doświadczenie siebie w poczuciu bezpieczeństwa i akceptacji <3 Dziękuję Uleńko za Twoją
@@ -232,7 +214,7 @@
                             <p class="overview"><b>Monika</b></p>
                         </div>
                         <div class="item carousel-item">
-                            <div class="img-box"><img src="/images/message.png" alt=""></div>
+                            <div class="img-box">Opinie</div>
                             <p class="testimonial">
                                 I have visited Ula for Lomi Lomi massage regularly over the past 9 months. Her massage
                                 room is warm and welcoming with the perfect ambience. Ula is very friendly and relaxed,
@@ -244,7 +226,7 @@
                             <p class="overview"><b>Betie</b></p>
                         </div>
                         <div class="item carousel-item">
-                            <div class="img-box"><img src="/images/message.png" alt=""></div>
+                            <div class="img-box">Opinie</div>
                             <p class="testimonial">
                                 Ula ma niezwykły dar czucia, wyczuwania potrzeb ciała, jest obecna całą sobą, całym
                                 swoim sercem. W czasie sesji u Uli możesz spodziewać się wielu rzeczy - od delikatności
@@ -268,9 +250,10 @@
     </section>
     <div id="mybutton" data-aos="fade-in" data-aos-delay="600" data-aos-offset="200"
          data-aos-duration="1600">
-        <button class="feedback"><div class="phone_image"></div></button>
+        <button class="feedback">
+            <div class="phone_image"></div>
+        </button>
     </div>
-
     <footer class="footer">
 
         <div class="myfooter">
@@ -295,7 +278,5 @@
 <script>
     AOS.init();
 </script>
-
-
 </body>
 </html>
